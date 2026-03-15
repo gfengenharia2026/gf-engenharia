@@ -3,6 +3,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
+import ExitIntentPopup from "./components/ExitIntentPopup";
+import SchemaMarkup from "./components/SchemaMarkup";
+import SocialProof from "./components/SocialProof";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import HomePage from "./pages/Home";
 
@@ -31,7 +34,10 @@ function App() {
         // switchable
       >
         <TooltipProvider>
+          <SchemaMarkup />
           <Toaster />
+          <ExitIntentPopup />
+          <SocialProof />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
