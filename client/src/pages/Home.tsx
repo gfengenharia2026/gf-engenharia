@@ -6,6 +6,9 @@ import Header from '@/components/Header';
 import CalendlyWidget from '@/components/CalendlyWidget';
 import PriceCalculator from '@/components/PriceCalculator';
 import CrispChat from '@/components/CrispChat';
+import { useAuth } from '@/_core/hooks/useAuth';
+import { trpc } from '@/lib/trpc';
+import LeadForm from '@/components/LeadForm';
 
 const HERO_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663057289090/FfhZ2VxW9RDUmNFz5qwBY3/hero-engenheiro-YD5NWNMKezgrrJhjC8vjux.webp';
 const SERVICOS_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663057289090/FfhZ2VxW9RDUmNFz5qwBY3/servicos-background-cFUjx8bDgh9m4NPLSfybPN.webp';
@@ -35,6 +38,8 @@ function CounterNumber({ target, duration = 2000 }: { target: number; duration?:
   return <span>{count.toLocaleString('pt-BR')}</span>;
 }
 export default function HomePage() {
+  const { user, isAuthenticated } = useAuth();
+  
   return (
     <div className="min-h-screen bg-white">
       <CrispChat />

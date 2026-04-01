@@ -8,12 +8,14 @@ import SchemaMarkup from "./components/SchemaMarkup";
 import SocialProof from "./components/SocialProof";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import HomePage from "./pages/Home";
-
+import AdminDashboard from "./pages/AdminDashboard";
 
 function Router() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={HomePage} />
+      <Route path={"/admin/dashboard"} component={AdminDashboard} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
