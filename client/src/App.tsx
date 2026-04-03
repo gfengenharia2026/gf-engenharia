@@ -7,9 +7,11 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Videos from "./pages/Videos";
+import SalesDashboard from "./pages/SalesDashboard";
 import SchemaMarkup from "./components/SchemaMarkup";
 import ExitIntentPopup from "./components/ExitIntentPopup";
 import SocialProof from "./components/SocialProof";
+import AIChat from "./components/AIChat";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -18,6 +20,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/videos"} component={Videos} />
+      <Route path={"/admin/dashboard"} component={SalesDashboard} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -42,6 +45,7 @@ function App() {
           <Toaster />
           <ExitIntentPopup />
           <SocialProof />
+          <AIChat />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
