@@ -9,9 +9,14 @@ declare global {
 
 export default function CrispChat() {
   useEffect(() => {
-    // Inicializar Crisp Chat
+    // CONFIGURAR CRISP CHAT:
+    // 1. Acesse https://crisp.chat
+    // 2. Vá para Settings → Website
+    // 3. Copie o Website ID
+    // 4. Substitua 'YOUR_CRISP_ID' abaixo pelo seu ID
+    
     (window as any).$crisp = [];
-    (window as any).CRISP_WEBSITE_ID = 'YOUR_CRISP_ID'; // Substitua com seu ID real
+    (window as any).CRISP_WEBSITE_ID = 'YOUR_CRISP_ID'; // TODO: Substitua com seu ID do Crisp
 
     const d = document;
     const s = d.createElement('script');
