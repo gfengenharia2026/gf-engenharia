@@ -43,10 +43,10 @@
 }
 
 :root {
-  /* Cores Corporativas - Minimalismo Corporativo */
-  --primary: #1E3A8A; /* Azul Escuro */
+  /* Cores Corporativas - Documento GF Engenharia */
+  --primary: #0D3B66; /* Azul Marinho (do documento) */
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #1E3A8A;
+  --sidebar-primary: #0D3B66;
   --sidebar-primary-foreground: #FFFFFF;
   --chart-1: #3B82F6;
   --chart-2: #1E40AF;
@@ -62,21 +62,21 @@
   --card-foreground: #1F2937;
   --popover: #FFFFFF;
   --popover-foreground: #1F2937;
-  --secondary: #F3F4F6; /* Cinza Claro */
+  --secondary: #E8EEF3; /* Cinza Claro Azulado (do documento) */
   --secondary-foreground: #374151;
-  --muted: #E5E7EB;
+  --muted: #8FA3B3; /* Cinza Médio (do documento) */
   --muted-foreground: #6B7280;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   --border: #E5E7EB;
-  --input: #F3F4F6;
-  --ring: #1E3A8A;
+  --input: #E8EEF3; /* Cinza Claro (do documento) */
+  --ring: #0D3B66; /* Azul Marinho (do documento) */
   --sidebar: #FFFFFF;
   --sidebar-foreground: #1F2937;
-  --sidebar-accent: #F3F4F6;
-  --sidebar-accent-foreground: #1E3A8A;
+  --sidebar-accent: #E8EEF3; /* Cinza Claro (do documento) */
+  --sidebar-accent-foreground: #0D3B66; /* Azul Marinho (do documento) */
   --sidebar-border: #E5E7EB;
-  --sidebar-ring: #1E3A8A;
+  --sidebar-ring: #0D3B66; /* Azul Marinho (do documento) */
 }
 
 .dark {
