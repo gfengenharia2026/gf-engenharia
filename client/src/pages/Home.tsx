@@ -9,6 +9,7 @@ import { useAuth } from '@/_core/hooks/useAuth';
 import { trpc } from '@/lib/trpc';
 import LeadForm from '@/components/LeadForm';
 import { WHATSAPP_URL, PHONE_DISPLAY, PROFESSIONAL_NAME, CREA_NUMBER, YEARS_EXPERIENCE, TOTAL_REPORTS, REGION, RATING, REVIEW_COUNT, TOTAL_CLIENTS } from '@/lib/constants';
+import RiskCalculator from '@/components/RiskCalculator';
 
 const HERO_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663057289090/FfhZ2VxW9RDUmNFz5qwBY3/hero-engenheiro-YD5NWNMKezgrrJhjC8vjux.webp';
 const SERVICOS_BG = 'https://d2xsxph8kpxj0f.cloudfront.net/310519663057289090/FfhZ2VxW9RDUmNFz5qwBY3/servicos-background-cFUjx8bDgh9m4NPLSfybPN.webp';
@@ -135,8 +136,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVIÇOS */}
-      <section id="servicos" className="py-20 bg-white">
+      {/* CALCULADORA DE RISCO */}
+      <section id="calculadora" className="py-20 bg-gray-50">
+        <div className="container max-w-6xl mx-auto px-4">
+          <RiskCalculator />
+        </div>
+      </section>
+
+      {/* SEÇÃO CONTATO */}
+      <section id="contato" className="py-20 bg-white">
         <div className="container max-w-6xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-blue-900 mb-12 text-center">Serviços Especializados</h2>
 
